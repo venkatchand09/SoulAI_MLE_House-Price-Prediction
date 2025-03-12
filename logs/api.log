@@ -1,0 +1,49 @@
+2025-03-12 02:27:11,004 - src.utils - INFO - Model and scaler loaded successfully
+2025-03-12 02:29:12,144 - api.endpoints - INFO - Prediction request received: {'MedInc': 8.3252, 'HouseAge': 41.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:29:12,217 - api.endpoints - INFO - Prediction result: 4.284722900000001
+2025-03-12 02:30:42,619 - api.endpoints - INFO - Prediction request received: {'MedInc': 8.3252, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:30:42,632 - api.endpoints - INFO - Prediction result: 3.9908815
+2025-03-12 02:30:51,530 - api.endpoints - INFO - Prediction request received: {'MedInc': 0.3252, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:30:51,544 - api.endpoints - INFO - Prediction result: 1.599872154093113
+2025-03-12 02:31:06,948 - api.endpoints - INFO - Prediction request received: {'MedInc': 10000.0, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:06,969 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:13,983 - api.endpoints - INFO - Prediction request received: {'MedInc': 10000333333.0, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:13,988 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:21,706 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:21,721 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:23,354 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:23,386 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,034 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,047 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,279 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,292 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,461 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,471 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,623 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,635 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,783 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,796 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:24,912 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:24,928 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:25,031 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:25,045 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:26,082 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:26,107 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:26,248 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:26,260 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:26,413 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:26,442 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:26,560 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 4.0, 'AveRooms': 6.984, 'AveBedrms': 1.023, 'Population': 322.0, 'AveOccup': 2.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:26,573 - api.endpoints - INFO - Prediction result: 4.772097699999992
+2025-03-12 02:31:58,635 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0000333333423432e+17, 'HouseAge': 42434.0, 'AveRooms': 3423436.984, 'AveBedrms': 4.023, 'Population': 3424432322.0, 'AveOccup': 4323422.555, 'Latitude': 37.88, 'Longitude': -122.23}
+2025-03-12 02:31:58,648 - api.endpoints - INFO - Prediction result: 4.071096499999995
+2025-03-12 02:32:13,214 - src.utils - INFO - Resources released
+2025-03-12 02:33:16,822 - src.utils - INFO - Model and scaler loaded successfully
+2025-03-12 02:35:37,862 - src.utils - INFO - Resources released
+2025-03-12 02:35:46,415 - src.utils - INFO - Model and scaler loaded successfully
+2025-03-12 02:36:28,244 - src.utils - INFO - Resources released
+2025-03-12 02:36:32,106 - src.utils - INFO - Model and scaler loaded successfully
+2025-03-12 11:38:56,067 - src.utils - INFO - Model and scaler loaded successfully
+2025-03-12 11:39:14,767 - api.endpoints - INFO - Prediction request received: {'MedInc': 1.0, 'HouseAge': 0.0, 'AveRooms': 1.0, 'AveBedrms': 0.0, 'Population': 0.0, 'AveOccup': 1.0, 'Latitude': 0.0, 'Longitude': 0.0}
+2025-03-12 11:39:14,812 - api.endpoints - INFO - Prediction result: 1.3847402
+2025-03-12 11:42:56,237 - src.utils - INFO - Resources released
