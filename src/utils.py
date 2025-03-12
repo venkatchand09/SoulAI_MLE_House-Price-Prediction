@@ -23,7 +23,7 @@ def setup_logging(log_file='logs/house_price_prediction.log'):
         ]
     )
     
-    return logging.getLogger(__name__)
+    return logging.getLogger(_name_)
 
 
 def create_directories():
@@ -39,13 +39,13 @@ def create_directories():
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
         
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     logger.info("Created project directories")
 
 
 def load_model(model_path='models/random_forest_model.joblib'):
     """Load a trained model from disk."""
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     
     try:
         model = joblib.load(model_path)
@@ -58,7 +58,7 @@ def load_model(model_path='models/random_forest_model.joblib'):
 
 def load_scaler(scaler_path='models/scaler.joblib'):
     """Load a fitted scaler from disk."""
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     
     try:
         scaler = joblib.load(scaler_path)
@@ -71,7 +71,7 @@ def load_scaler(scaler_path='models/scaler.joblib'):
 
 def predict_house_price(features, model_path='models/random_forest_model.joblib', scaler_path='models/scaler.joblib'):
     """Predict house price based on input features."""
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     
     try:
         # Load model and scaler
@@ -100,7 +100,7 @@ def predict_house_price(features, model_path='models/random_forest_model.joblib'
 
 def get_feature_importance(model_path='models/random_forest_model.joblib'):
     """Get feature importance from a trained model."""
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     
     try:
         # Load model
@@ -140,11 +140,11 @@ def plot_feature_importance(importance_df, save_path='docs/feature_importance.pn
     plt.savefig(save_path)
     plt.close()
     
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(_name_)
     logger.info(f"Feature importance plot saved to {save_path}")
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     # Setup logging
     logger = setup_logging()
     
