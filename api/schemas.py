@@ -1,5 +1,14 @@
 from pydantic import BaseModel, Field, validator
-from typing import Dict, Any
+from typing import Dict, Any, Optional
+from enum import Enum
+from pydantic import field_validator
+
+class ModelType(str, Enum):
+    """Enum for available model types."""
+    LINEAR_REGRESSION = "linear_regression"
+    DECISION_TREE = "decision_tree"
+    RANDOM_FOREST = "random_forest"
+    XGBOOST = "xgboost"
 
 
 class HouseFeatures(BaseModel):
@@ -11,7 +20,7 @@ class HouseFeatures(BaseModel):
         HouseAge (float): Median house age in block group
         AveRooms (float): Average number of rooms per household
         AveBedrms (float): Average number of bedrooms per household
-        Population (float): Block group population
+        Population (float): Population in block group
         AveOccup (float): Average number of household members
         Latitude (float): Block group latitude
         Longitude (float): Block group longitude
@@ -24,15 +33,16 @@ class HouseFeatures(BaseModel):
     AveOccup: float = Field(..., description="Average number of household members", gt=0)
     Latitude: float = Field(..., description="Block group latitude")
     Longitude: float = Field(..., description="Block group longitude")
+    model_type: Optional[ModelType] = Field(ModelType.RANDOM_FOREST, description="Model type to use for prediction")
     
-    @validator('AveBedrms')
-    def bedrooms_less_than_rooms(cls, v, values):
-        if 'AveRooms' in values and v > values['AveRooms']:
+    @field_validator('AveBedrms')
+    def bedrooms_less_than_rooms(cls, v, info):
+        if 'AveRooms' in info.data and v > info.data['AveRooms']:
             raise ValueError('Average bedrooms cannot exceed average rooms')
         return v
     
-    class Config:
-        schema_extra = {
+    model_config = {
+        "json_schema_extra": {
             "example": {
                 "MedInc": 8.3252,
                 "HouseAge": 41.0,
@@ -41,39 +51,11 @@ class HouseFeatures(BaseModel):
                 "Population": 322.0,
                 "AveOccup": 2.555,
                 "Latitude": 37.88,
-                "Longitude": -122.23
+                "Longitude": -122.23,
+                "model_type": "random_forest"
             }
         }
-
-
-class PredictionResponse(BaseModel):
-    """
-    Schema for prediction response.
-    
-    Attributes:
-        predicted_price (float): Predicted median house value (in $100,000s)
-        features (dict): Input features used for prediction
-    """
-    predicted_price: float = Field(..., description="Predicted median house value (in $100,000s)")
-    features: Dict[str, Any] = Field(..., description="Input features used for prediction")
-    
-    class Config:
-        schema_extra = {
-            "example": {
-                "predicted_price": 4.526,
-                "features": {
-                    "MedInc": 8.3252,
-                    "HouseAge": 41.0,
-                    "AveRooms": 6.984,
-                    "AveBedrms": 1.023,
-                    "Population": 322.0,
-                    "AveOccup": 2.555,
-                    "Latitude": 37.88,
-                    "Longitude": -122.23
-                }
-            }
-        }
-
+    }
 
 class ErrorResponse(BaseModel):
     """
