@@ -259,5 +259,5 @@ def train_and_optimize_models():
     return baseline_models, baseline_results, optimized_models, optimized_results
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     train_and_optimize_models()
