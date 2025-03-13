@@ -80,7 +80,7 @@ The following table shows the performance of the optimized models:
 | Optimized XGBoost | 0.458 | 0.298 | 0.839 |
 | Optimized Random Forest | 0.506 | 0.328 | 0.804 |
 
-XGBoost achieved the best performance with the lowest RMSE and highest R² score, indicating that it explains approximately 81.2% of the variance in house prices.
+XGBoost achieved the best performance with the lowest RMSE and highest R² score, indicating that it explains approximately 83.9% of the variance in house prices.
 
 Feature importance analysis from the XGBoost model revealed:
 1. Median income (MedInc) is the most important feature
