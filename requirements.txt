@@ -16,9 +16,9 @@ pydantic>=1.9.0
 # Utilities
 joblib>=1.1.0
 python-dotenv>=0.20.0
+python-multipart
 
 # Testing
-pytest>=7.0.0
 httpx>=0.22.0  # For FastAPI test client
 
 # Logging
