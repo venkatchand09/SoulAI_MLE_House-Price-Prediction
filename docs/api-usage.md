@@ -27,7 +27,7 @@ The API is built using FastAPI and provides predictions for house prices based o
 
 3. Start the API:
    ```bash
-   uvicorn app:app --host 0.0.0.0 --port 8000
+   python api\App.py
    ```
 
 4. The API will be available at: `http://localhost:8000`
