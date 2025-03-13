@@ -130,13 +130,9 @@ This will:
 ## Model Performance
 
 The best performing model is XGBoost with the following metrics:
-- RMSE: 0.53
-- MAE: 0.38
-- R² Score: 0.81
-
-## License
-
-This project is licensed under the MIT License.
+- RMSE: 0.47
+- MAE: 0.30
+- R² Score: 0.83
 
 ## Acknowledgments
 
