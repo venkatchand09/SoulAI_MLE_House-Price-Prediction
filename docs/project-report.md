@@ -77,8 +77,8 @@ The following table shows the performance of the optimized models:
 
 | Model | RMSE | MAE | R² Score |
 |-------|------|-----|----------|
-| Optimized XGBoost | 0.531 | 0.379 | 0.812 |
-| Optimized Random Forest | 0.549 | 0.393 | 0.801 |
+| Optimized XGBoost | 0.458 | 0.298 | 0.839 |
+| Optimized Random Forest | 0.506 | 0.328 | 0.804 |
 
 XGBoost achieved the best performance with the lowest RMSE and highest R² score, indicating that it explains approximately 81.2% of the variance in house prices.
 
