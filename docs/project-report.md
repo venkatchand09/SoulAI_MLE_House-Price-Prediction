@@ -124,7 +124,7 @@ The API was thoroughly tested for:
 
 ## Conclusion
 
-This project successfully created a house price prediction model with a reasonable accuracy (RMSE of 0.531, which corresponds to approximately $53,100 in prediction error). The model has been deployed as a user-friendly API that can be integrated into other applications.
+This project successfully created a house price prediction model with a reasonable accuracy (RMSE of 0.458, which corresponds to approximately $45,800 in prediction error). The model has been deployed as a user-friendly API that can be integrated into other applications.
 
 ### Insights
 
